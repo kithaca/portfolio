@@ -22,14 +22,14 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 }
 /*------ HEADERBG STARTS---------*/
 .headerbg{
-	background: url(../images/bannerbg.png);
+	background: url(../images/splash.jpg);
 	min-height:700px;
 	width:100%;
 	background-size:cover;
 }
 /*------ HEADER STARTS---------*/
 .header{
-	background:rgba(0, 0, 0, 0.24);
+	background: black;
 }
 /*------ CONTAINER STARTS---------*/
 .container{
@@ -88,17 +88,17 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 	padding:0;
 }
 .bannerhead h2 span{
-	color:#F1E9F2;
+	color: gainsboro;
 	font-weight:bolder;
 	font-size:1.2em;
 }
 .bannerhead h3{
-	color:#281D24;
+	color: gainsboro;
 	font-weight:bolder;
     font-size:2.5em;
 }
 .bannerhead p{
-    color:#F1E9F2;
+    color: gainsboro;
 }
 a.downarrow  span{
  	height:48px;
@@ -186,6 +186,7 @@ a.arrow{
 	min-height:600px;
 	background:#20191B;
 	position:relative;
+	padding-bottom: 10%;
 }
 .skill-section h2{
 	color:#C6C3C5;
@@ -292,9 +293,9 @@ a.portdown{
 	}
 /*------FOOTER STARTS---------*/
 .footer{
-	background: url(../images/footerbg.jpg);
+	background: black;
 	position: relative;
-	min-height: 567px;
+	min-height: 300px;
 	background-size: cover;
 	position:relative;
 }
@@ -321,6 +322,7 @@ a.portdown{
 	margin-top:1em;
 }
 .social-icons{
+	padding-bottom: 100px;
 }
 .social-icons a img{
 	margin-right:0.5em;
@@ -801,7 +803,7 @@ p.copy-right a{
 	}
 	.about div.container{
 		padding:0;
-	} 
+	}
 	.bannerhead {
 		width: 100%;
 	}
@@ -896,4 +898,54 @@ p.copy-right a{
 		float: none;
 		width:100%
 	}
+}
+
+.project {
+	display: block;
+	opacity: 0.8;
+	transition-property: opacity;
+  transition-duration: 0.5s;
+  transition-timing-function: initial;
+  transition-delay: initial;
+}
+
+.project:hover {
+	opacity: 1;
+}
+
+.project > a {
+	display: none;
+	position: absolute;
+	padding: 10px 15px;
+	background: gray;
+}
+
+.project:hover > a {
+	transition-duration: 0.5s;
+	display: block;
+	opacity: 1;
+	margin-top: -54%;
+}
+
+.live {
+	left: 20%;
+}
+
+.github {
+	left: 50%;
+}
+
+.single {
+	left: 35%;
+}
+
+.w3layouts {
+	color: gray;
+	text-align: right;
+	padding-bottom: 20px;
+	left: 20%;
+}
+
+.w3layouts a {
+	color: lightgray;
 }

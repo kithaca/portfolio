@@ -7,7 +7,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Resume Website Template | Home :: w3layouts</title>
+	<title>Ksenia Kriksunov</title>
+	<link rel="icon" type="image/png" href="images/favicon.png" />
 	<script src="js/jquery.min.js"> </script>
 	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
@@ -57,12 +58,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	      <div class="container">
 		     <div class="banner-info">
 			      <div class="bannerlogo">
-					  <img src="images/diamond.png">
 			      </div>
 			      <div class="bannerhead">
 				      <h2><span>Ksenia Kriksunov</span></h2>
-				      <h3>Web Developer</h3>
-				      <p>Enthusiastic, dedicated engineer with a background in Ruby/Rails, JavaScript, and React/Flux.</p>
+				      <h3>Software Engineer</h3>
+				      <p>Enthusiastic San Francisco-based developer with a background in Ruby/Rails, JavaScript, and React.</p>
 					  <a class="downarrow scroll" href="#about"><span> </span></a>
 			      </div>
 			 </div>
@@ -77,13 +77,20 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	 <!---About starts--------->
 	   <div id="about" class="about">
 		 <div class="container">
-			   <div class="header-section text-center">
-				  <h2><span> </span>ABOUT<span> </span></h2>
-				  </div>
-				 <span><p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
-					 lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.</p></span>
+			  <div class="header-section text-center">
+					<h2><span> </span>ABOUT<span> </span></h2>
+				</div>
+				<span>
+					<p><b>I love learning how things work at a fundamental level.</b></p>
+					<br>
+					<p>I have a wide variety of interests - I completed a double degree in biology and linguistics -
+					 but from the first time I took a programming class, I was hooked. I'm excited to work together on meaningful projects and solve difficult problems -
+					 perhaps with an occasional break to discuss the etymology of a word or the meaning of life.</p>
+					<br>
+					<p>My other interests include rock climbing, Argentine tango, and language learning.</p>
+				 </span>
 
-			  <div class="years">
+			  <!-- <div class="years">
 				<h4><b>2009</b></h4>
 				 <span><h4>Project Manager Web Center</h4></span>
 				 <p><i>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
@@ -105,7 +112,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						lorem quis bibendum auctor,nisi elit consequat ipsum,nec sagittis sem nibh id elit.Duis.
 						sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec teltus</i></p>
 			     </div>
-			  </div>
+			  </div> -->
 				 <a class="arrow scroll" href="#skills"><span> </span></a>
 		  </div>
 	  </div>
@@ -181,34 +188,17 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 												<h3>CSS</h3>
 											 </div>
 										</div>
+										<div class="col-md-3">
+											<div class="skill-grid">
+												<img src="images/rspec.png">
+												<h3>RSpec</h3>
+											 </div>
+										</div>
 										<div class="clearfix"> </div>
 								  </div>
 						   </div>
 					  </div>
-					<!---->
-					 <script type="text/javascript" src="js/circles.js"></script>
-								 <script>
-									var colors = [
-											['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A'], ['#181115', '#30222A']
-										];
-									for (var i = 1; i <= 5; i++) {
-										var child = document.getElementById('circles-' + i),
-											percentage = 50 + (i * 10);
 
-										Circles.create({
-											id:         child.id,
-											percentage: percentage,
-											radius:     80,
-											width:      15,
-											number:   	percentage / 10,
-											text:       '%',
-											colors:     colors[i - 1]
-										});
-									}
-
-					</script>
-
-					<!--/-->
 			 </div>
 		 </div>
 		   <a class="down scroll" href="#port"><span> </span></a>
@@ -218,27 +208,35 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 <!---PORTFOLIO Starts--------->
 		 <div id="port" class="Portfolio">
 			  <div class="Portfolio-section text-center">
-			      <h2><span> </span>PORTFOLIO<span> </span></h2>
+			      <h2><span> </span>PROJECTS<span> </span></h2>
 			  </div>
 			  <div class="container">
 				  <div class="portfolio-grids">
 					  <div class="portfolio-grid col-md-4">
-						 <a href="#"><img src="images/monitr1.png"></a>
-						  <p>Proin gravida nibh vel velit auctor aliquet.
-							 Aenean sollicitudin, lorem quis bibendum</p>
-						  <a class="rightarrow" href="#"><span> </span></a>
+							<h3><b>Catalyst</b></h3>
+							<div class="project">
+								<img src="images/catalyst.png"></img>
+								<a href="http://www.catalyze.tech" class="live">Live</a>
+								<a href="https://github.com/kithaca/catalyst" class="github">Github</a>
+							</div>
+							<p>Kickstarter-inspired platform for sponsoring scientific research (Ruby on Rails, JavaScript, React/Flux).</p>
 					  </div>
 					  <div class="portfolio-grid col-md-4">
-						  <a href="#"><img src="images/monitr2.png"></a>
-						  <p>Proin gravida nibh vel velit auctor aliquet.
-							 Aenean sollicitudin, lorem quis bibendum</p>
-						  <a class="rightarrow" href="#"><span> </span></a>
+							<h3><b>Reconnaissance</b></h3>
+							<div class="project">
+								<img src="images/reconnaissance.png"></img>
+								<a href="http://kithaca.github.io/reconnaissance" class="live">Live</a>
+								<a href="https://github.com/kithaca/reconnaissance" class="github">Github</a>
+							</div>
+						  <p>Space-themed capture-the-flag (JavaScript, HTML5 Canvas).</p>
 					  </div>
 					  <div class="portfolio-grid col-md-4">
-						  <a href="#"><img src="images/monitr3.png"></a>
-						  <p>Proin gravida nibh vel velit auctor aliquet.
-							 Aenean sollicitudin, lorem quis bibendum</p>
-						  <a class="rightarrow" href="#"><span> </span></a>
+							<h3><b>Chess</b></h3>
+							<div class="project">
+								<img src="images/chess.png"></img>
+								<a href="https://github.com/kithaca/chess" class="single">Github</a>
+							</div>
+						  <p>Console-based 2-player chess game (Ruby).</p>
 					  </div>
 					  <div class="clear"> </div>
 				  </div>
@@ -251,48 +249,21 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
   <!---FOOTER Starts----------->
   <div  id="contact" class="footer">
-      <div class="container">
+    <div class="container">
 
-		   <div class="contact-section text-center">
+		  <div class="contact-section text-center">
 			  <h2><span> </span>CONTACT<span> </span></h2>
 		  </div>
-		 <div class="row">
+				<div class="social-icons text-center">
+				   <a href="https://www.linkedin.com/in/kseniakriksunov"><img src="images/in.png"></a>
+				   <a href="mailto:kithaca@gmail.com"><img src="images/mail.png"></a>
+					 <a href="https://github.com/kithaca?tab=repositories"><img src="images/github-light.png"></a>
+			   </div>
 
-			 <div class="col-md-6">
-				  <div class="footer-left">
-						<div class="social-icons">
-						   <a href="#"><img src="images/in.png"></a>
-						   <a href="#"><img src="images/twt.png"></a>
-						   <a href="#"><img src="images/fb.png"></a>
-					   </div>
-					   <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem
-					   quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh
-					   id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-					   Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a
-					   ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
-				  </div>
-			 </div>
-
-			  <div class="col-md-6">
-				  <div class="footer-right">
-				 <div class="form">
-				 <form>
-					 <input type="text" class="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}">
-					 <input type="text" class="text" value="E-mail" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'E-mail';}">
-					 <textarea rows="2" cols="70" onfocus="if(this.value == 'Your Message') this.value='';" onblur="if(this.value == '') this.value='Your Message';" >Your Message</textarea>
-					 <div class="clear"> </div>
-					 <input type="submit" value="SEND">
-				 </form>
-				 </div>
-				  </div>
-				  <div class="clear"></div>
-				  <p class="copy-right">Template by <a href="http://w3layouts.com/">W3layouts</a></p>
-			  </div>
+			  <div class="clear"></div>
+			  <p class="w3layouts">Template by <a href="http://w3layouts.com/">W3layouts</a></p>
+			<a class="up scroll" href="#top-top"><span> </span></a>
 		 </div>
 	 </div>
-	 <a class="up scroll" href="#top-top"><span> </span></a>
-
- </div>
-
  </body>
  </html>

@@ -88,7 +88,7 @@ body input[type="text"],body input[type="submit"],body textarea,body input[type=
 	padding:0;
 }
 .bannerhead h2 span{
-	color: gainsboro;
+	color: white;
 	font-weight:bolder;
 	font-size:1.2em;
 }
